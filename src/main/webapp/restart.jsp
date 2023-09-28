@@ -16,28 +16,28 @@
 <body>
 <style>
     body {
-        background-image: url('image/houseI.jpg');
+        background-image: url('image/imageSpacePlanet.gif');
         background-repeat: no-repeat;
         background-size: cover;
     }
 </style>
-<form  class="row g-1" style="padding-left: 170px; padding-top: 100px;" action="restart-servlet" method="POST">
-    <div style="padding-left: 15px; padding-top: 100px;">
-        <div class="badge bg-primary text-center" style="width: 70rem; height: 150px;">
-            <h1 style="color: coral"> Тебя вернули домой.</h1>
+<form  class="row g-1" style="padding-left: 170px; padding-top: 20px;" action="restart-servlet" method="POST">
+    <div style=" padding-top: 40px;">
+        <div class="text-center" style=" padding-left: 70px; width: 70rem; height: 100px; ">
+            <h1 style="color: blue" class="display-1"> Тебя вернули домой.</h1>
             <h1 style="padding-left: 20px; color: lawngreen">Победа !</h1>
-            <image style="border:5px yellow  solid; width: 250px; height: 250px;border-radius: 50%;" src="image/house.gif"/>
+            <image style="border:5px yellow  solid; width: 250px; height: 250px;border-radius: 50%;" src="image/imageSpace.gif"/>
         </div>
     </div>
-    <div class="col-md-4" style="padding-left: 100px; padding-top: 70px;">
-        <button style="border:5px orangered  solid; width: 200px; height: 100px;" name="result-restart" type="submit" value="result-restartOne-way" class="btn btn-warning">Сыграть ещё раз</button>
+    <div class="col-md-4" style="padding-left: 100px; padding-top: 160px;">
+        <button style="border:5px green  solid; width: 200px; height: 100px;" name="result-restart" type="submit" value="result-restartOne-way" class="btn btn-warning">Сыграть ещё раз</button>
     </div>
-    <div class="col-md-4" style="padding-left: 420px; padding-top: 70px;">
-        <button style=" border:5px mediumvioletred  solid; width: 200px; height: 100px;" name="result-restart" type="submit" value="result-restartTwo-way" class="btn btn-danger">Сменить игрока</button>
+    <div class="col-md-4" style="padding-left: 420px; padding-top: 160px;">
+        <button style=" border:5px orange  solid; width: 200px; height: 100px;" name="result-restart" type="submit" value="result-restartTwo-way" class="btn btn-info">Сменить игрока</button>
     </div>
 </form>
-<div style=" padding-top: 2px; padding-left: 10px" class="fs-5">
-    <div style="border:5px greenyellow  solid; padding-left: 10px; width:300px; color: white">
+<div style=" padding-top: 60px; padding-left: 10px" class="fs-5">
+    <div style="border:5px greenyellow  solid; padding-left: 10px; width:300px; color: ghostwhite">
         <% String s = (String) session.getAttribute("ipaddress");%>
         <p> Ip address: <%=s%> </p>
         <% String a = (String) session.getAttribute("name-threeWay");%>
